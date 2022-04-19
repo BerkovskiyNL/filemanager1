@@ -26,11 +26,11 @@ class FileManager(object):
 
         while True:
 
-            if come == '1':
+            if infile == '1':
                 print('= = Перечень команд при работе с папками = =')
                 print('New - создать папку')
                 print('Delete - удалить папку')
-            elif come == '2':
+            elif infile == '2':
                 print('= = Перечень команд при работе с файлами = =')
                 print('New - создать файл')
                 print('Delete - удалить файл')
@@ -39,13 +39,13 @@ class FileManager(object):
                 print('Выход из программы')
 
     def open_file(self: Any):
-        if manage == 'New':
+        if incomand == 'New':
             with open(self.open_file, 'w') as file:
                 print('Создан')
                 file.close()
 
     def delete_file(self):
-        if manage == 'Delete':
+        if incomand == 'Delete':
             os.remove()
 
 #if __name__ == '__main__':
